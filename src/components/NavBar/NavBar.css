@@ -1,0 +1,59 @@
+.navbar{
+    margin: 0;
+    width: 100%;
+    background: #EAEAEA;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 15px;
+    box-shadow: 0px 10px 25px -5px #00000040;
+}
+.navbar__list-text{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: -0.06em;
+    text-align: center;
+
+}
+.navbar__list-item:hover .navbar__list-text {
+    color: #fff;
+}
+.navbar__list{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navbar__list-item{
+    display: flex;
+    width: calc(100% / 7);
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    position: relative; /* задаем относительное позиционирование */
+}
+.navbar__list-item:hover {
+    background: var(--yellow);
+}
+.navbar__list-text:before {
+    content: "";
+    position: absolute; /* задаем абсолютное позиционирование */
+    bottom: -10px; /* располагаем псевдоэлемент снизу */
+    left: 0; /* располагаем псевдоэлемент слева */
+    width: 0; /* задаем начальную ширину псевдоэлемента равной нулю */
+    height: 5px; /* задаем высоту псевдоэлемента */
+    background-color: var(--yellow);
+    transition: width 0.3s; /* задаем плавность изменения ширины псевдоэлемента */
+}
+.navbar__list-text.active:before {
+    width: 100%;
+}
+

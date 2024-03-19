@@ -1,0 +1,196 @@
+.problems{
+    display: flex;
+    width: 100%;
+    height: 1330px;
+    background: #ECECEC;
+    flex-direction: column;
+}
+.problems__title{
+    margin-top: 170px;
+    margin-left: 74px;
+    display: flex;
+    width: 766px;
+    height: max-content;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.problems__description{
+    margin: 41px auto;
+    display: flex;
+    width: 752px;
+    min-height: 171px;
+    flex-direction: column;
+    border-radius: 21px;
+    background: var(--yellow);
+}
+.problems__description-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 14px;
+    color: #fff;
+}
+.problems__description-subtitle{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+
+}
+.problems__container{
+    display: flex;
+    width: 100%;
+    margin-top: 41px;
+    height: 171px;
+}
+.problems__container-left{
+    margin-left: 67px;
+    margin-right: 27px;
+}
+.problems__container-right{
+    margin-right: 67px;
+}
+.problems__list{
+    display: flex;
+    width: 365px;
+    height: 292px;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.problems__container-text{
+    display: flex;
+    width: 458px;
+    margin-left: 40px;
+    height: max-content;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.problems__list-item{
+    display: flex;
+    flex-direction: row;
+}
+.problems__list-image{
+    margin-top: 3px;
+    margin-right: 16px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../../images/Union.svg");
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.problems__container-image{
+    display: flex;
+    margin-top: -20px;
+    width: 510px;
+    height: 361px;
+}
+.problems-background1{
+    background-image: url("../../images/foto.png");
+}
+.problems-background2{
+    background-image: url("../../images/foto1.png");
+}
+.problems-background3{
+    background-image: url("../../images/foto2.png");
+}
+.problems-background4{
+    background-image: url("../../images/foto3.png");
+}
+
+.problems-background5{
+    background-image: url("../../images/pc.png");
+}
+.problems__form{
+    margin: 264px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 752px;
+    height: 186px;
+    background: #ECECEC;
+    border-radius: 15px;
+    box-shadow: 0px 4px 25px 0px #00000059;
+
+}
+.problems__form-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.problems__form-text{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.problems__form-subtext {
+    display: flex;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+.problems__form-input{
+    display: flex;
+    width: 328px;
+    height: 58px;
+    border: none;
+    border-radius: 39px;
+    padding: 0 0 0 29px;
+    margin: 14px 16px 30px 68px;
+}
+.problems__form-button{
+    margin-top: 14px;
+    margin-right: 18px;
+    padding-top: 0px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 261px;
+    height: 58px;
+    background: var(--yellow);
+    box-shadow: 0 8px 8px 0 #dece40;
+    border-radius: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    transition: background-color 0.3s ease; /* Измените transition на background-color */
+    font-weight: 800;
+    line-height: 23px;
+}
+
+.problems__form-button:hover {
+    background-color: #dece40; /* Затемненный цвет фона при наведении */
+}
+.problems__form-span {
+    font-weight: 800;
+}

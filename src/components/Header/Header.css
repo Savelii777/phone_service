@@ -1,0 +1,136 @@
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    justify-content: space-between;
+    background: #fff;
+}
+.header__logo{
+    height: 120px;
+    width: 120px;
+    margin: 0;
+    background-image: url("../../images/logo.png");
+    background-position: center;
+    background-size: cover;
+}
+.header__nav-text{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #000;
+}
+.header__nav{
+    margin-top: 65px;
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header__nav-item{
+    position: relative; /* задаем относительное позиционирование */
+}
+
+.header__nav-item:before {
+    content: "";
+    position: absolute; /* задаем абсолютное позиционирование */
+    bottom: -10px; /* располагаем псевдоэлемент снизу */
+    left: 0; /* располагаем псевдоэлемент слева */
+    width: 0; /* задаем начальную ширину псевдоэлемента равной нулю */
+    height: 5px; /* задаем высоту псевдоэлемента */
+    background-color: var(--yellow);
+    transition: width 0.3s; /* задаем плавность изменения ширины псевдоэлемента */
+}
+
+.header__nav-item:hover:before {
+    width: 100%; /* изменяем ширину псевдоэлемента при наведении на ссылку */
+}
+.header__contacts{
+    display: flex;
+    flex-direction: column;
+}
+.contacts__button{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    display: flex;
+    width: 216px;
+    height: 49px;
+    background: var(--yellow);
+    box-shadow: 0 8px 8px 0 #dece40;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.3s ease; /* Измените transition на background-color */
+}
+
+.contacts__button:hover {
+    background-color: #dece40; /* Затемненный цвет фона при наведении */
+}
+
+.contacts__image{
+    width: 24px;
+    height: 25px;
+    margin-right: 10px;
+    background-image: url("../../images/ph.png");
+
+}
+
+.contacts__time{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: center;
+}
+.contacts__list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 150px;
+    justify-content: space-between;
+}
+
+.contacts__list-image_telegram{
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/telegram.svg");
+    background-size: cover;
+background-position: center;
+}
+.contacts__list-image_whatsapp{
+    width: 34px;
+    height: 34px;
+    margin-top: -5px;
+    background-image: url("../../images/whatsapp.svg");
+    background-size: cover;
+    background-position: center;
+
+}
+.contacts__list-image_vk{
+    width: 24px;
+    height: 24px;
+    background-image: url("../../images/vk.svg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+.contacts__list-image_youtube{
+    width: 31px;
+    height: 19px;
+    margin-top: 3px;
+    background-image: url("../../images/youtube.svg");
+    background-size: cover;
+    background-position: center;
+
+
+}
